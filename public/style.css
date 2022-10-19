@@ -1,0 +1,25 @@
+h1 {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+p {
+  padding: 50px 0;
+}
+
+.container {
+  width: 850px;
+  margin: auto;
+  padding: 50px;
+}
+
+.img-404 {
+  width: 100vh;
+}
+
+img {
+  width: 15%;
+  margin: auto;
+  display: block;
+}
