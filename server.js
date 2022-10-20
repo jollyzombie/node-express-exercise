@@ -3,7 +3,6 @@ const path = require('path');
 
 const app = express();
 
-
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.use((req, res, next) => {
@@ -20,6 +19,11 @@ app.use('/user', (req, res) => {
 app.get('/', (req, res) => {
   res.show('home.html');
 });
+
+app.get('/home', (req, res) => {
+  res.show('home.html');
+});
+
 
 app.get('/about', (req, res) => {
   res.show('about.html');
