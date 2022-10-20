@@ -16,14 +16,9 @@ app.use('/user', (req, res) => {
   res.show('forbidden.html');
 });
 
-app.get('/', (req, res) => {
+app.get([ '/', '/home'], (req, res) => {
   res.show('home.html');
 });
-
-app.get('/home', (req, res) => {
-  res.show('home.html');
-});
-
 
 app.get('/about', (req, res) => {
   res.show('about.html');
